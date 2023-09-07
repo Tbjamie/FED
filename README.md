@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  Ik ga voor een responsive website
+  Ik heb gekozen om de focus te leggen op een Responsive website
  
 </details>
 
