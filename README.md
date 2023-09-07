@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina
-  <img src="./readme-images/screencapture-riotgames-en-2023-09-05-07_37_14.png" width="375px" alt="Dit is de homepagina van de Riot Games website">
+  <img src="./readme-images/homesmall.png" width="375px" alt="Dit is de homepagina van de Riot Games website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   About Riot
-  <img src="./readme-images/screencapture-riotgames-en-who-we-are-2023-09-05-07_45_37.png" width="375px" alt="Dit is de About Riot pagina op de Riot Games website">
+  <img src="./readme-images/aboutriotsmall.png" width="375px" alt="Dit is de About Riot pagina op de Riot Games website">
  
 </details>
 
