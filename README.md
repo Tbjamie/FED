@@ -58,6 +58,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  Toen ik de website van Riot games ging testen met een screenreader kwam ik erachter
+  dat ze een knop hebben gemaakt aan de onderkant van hun website wat het makkelijker maakt
+  om door de website heen te navigeren. Daarnaast hebben ze een optie gemaakt om meteen naar
+  de main content te gaan of meteen naar de main navigatie te gaan wat het ook een stuk 
+  makkelijker maakt om door de website heen te navigeren.
+  
+  Daarnaast leest hij alle <strong>headings</strong> voor met de titel die ook te lezen is, bij "Esports" hoor je
+  dus ook "Esports". Bij de <strong>links</strong> leest hij alles voor BEHALVE de dropdowns "Who we are" en "Work with us"
+  waardoor je die andere pagina's niet kan bereiken.
+
+
 </details>
 
 
@@ -68,7 +79,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="./readme-images/FED-breakdown-schets.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
