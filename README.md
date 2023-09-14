@@ -99,17 +99,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het namaken van de website ging best wel goed, maar ik had per ongeluk een paar verkeerde items in de nav gedaan waardoor ik een paar dingen moest aanpassen. 
+  Toen ik dat gedaan had was mijn website eerst kapot, maar uiteindelijk heb ik het kunnen oplossen en ziet mijn homepage er weer hetzelfde uit als eerst.
+  Ik heb ook mijn hamburger menu werkend gekregen met javascript en ik wil mij nu gaan focussen op de details van de homepage zoals hover, focus meer javascript etc.
+  Daarna wil ik doorgaan met het maken van de tweede pagina op dezelfde manier en als ik daar klaar mee ben wil ik beginnen om alles responsive te maken. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Jamie Tirbeni                           | student 2          | student 3    | student 4        |
+  | ---                                     | ---                | ---          | ---              |
+  | Ik wil mijn HTML laten nakijken         | en dit             | en ik dit    | en dan ik dat    |
+  | Ik wil vragen wat "GET" doet bij forms  | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...                                     | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
