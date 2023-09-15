@@ -10,6 +10,21 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: #e7e6e3;
+    background: var(--riotred);
+    text-shadow: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section ul a::selection {
+    background-color: transparent;
+    text-shadow: none;
+}
+
 :root {
     --riotred: #D13639;
     --red: #F12B15;
@@ -22,7 +37,7 @@
 body {
     background-color: var(--grey);
     font-family: sans-serif;
-    color: white;
+    color: #e7e6e3;
 }
 
 h2 {
@@ -37,6 +52,25 @@ h2 {
 /**********************/
 
 header {
+    width: 100vw;
+    height: 80px;
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+    border-bottom: none;
+    transition: 250ms;
+}
+
+header > ul li:first-of-type {
+    margin-left: .5em;
+}
+
+header ul li:last-of-type button:first-of-type {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 250ms;
+}
+
+/* header {
     width: 100vw;
     height: 80px;
     background-color: var(--headergrey);
@@ -56,7 +90,7 @@ header {
 
 .headerbar-transparent nav .menudiv a:last-of-type {
     background-color: rgba(255, 255, 255, 0.2);
-}
+} */
 
 header ul {
     display: flex;
@@ -144,7 +178,8 @@ header ul li:last-of-type button img {
 
 header nav {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-color: var(--grey);
     display: flex;
     flex-direction: column;
@@ -160,7 +195,7 @@ header nav ul {
     align-items: flex-start;
     justify-content: space-between;
     width: 100vw;
-    height: 10em;
+    height: auto;
     margin-top: 3em;
     margin-left: 1.25em;
     margin-bottom: 1.5em;
@@ -172,13 +207,18 @@ header nav ul li button {
 
 header nav ul li a {
     text-transform: uppercase;
-    color: white;
+    color: #e7e6e3;
     text-decoration: none;
     font-size: 1em;
     line-height: 1.5;
     font-weight: bold;
     letter-spacing: .08em;
     height: 1.25em;
+}
+
+header ul li:first-of-type a {
+    width: fit-content;
+    margin-left: 0;
 }
 
 header nav ul li:first-of-type {
@@ -206,8 +246,6 @@ header nav > button img {
 }
 
 header nav ul li {
-    display: flex;
-    justify-content: space-between;
     width: 91%;
     padding: .75em 1em;
     border-radius: 8px;
@@ -217,19 +255,66 @@ header nav ul li:hover, header nav ul li:focus {
     background-color: var(--menugrey);
 }
 
-header nav ul button {
+/* FIXME: FIX HET HOVER EFFECT VAN DE NAV DROPDOWN */
+
+header nav ul li details {
     border: none;
     background-color: transparent;
-    color: white;
+    color: #e7e6e3;
     font-size: 1em;
     line-height: 1.5;
     font-weight: bold;
     letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+header nav ul li details[open] summary img {
+    transform: rotate(180deg);
+}
+
+header nav ul li details[open] ul {
+    margin-top: 2em;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+header nav ul li details[open] ul li {
+    padding: 0;
+}
+
+header nav ul li details[open] ul li a {
+    font-size: 1em;
+    text-transform: none;
+    color: #c7c7c7;
+    text-align: left;
+    display: block;
+    margin-left: 0;
+    width: auto;
+}
+
+header nav ul li details:last-of-type ul li a {
+    height: 3.5rem;
+}
+
+header nav ul li details[open] ul li a:hover {
+    color: #e7e6e3;
+}
+
+header nav ul li details summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul details summary::-webkit-details-marker {
+    display: none;
 }
 
 header nav ul li img {
     width: 1.5em;
     object-fit: contain;
+    transition: 300ms;
 }
 
 header nav form {
@@ -285,9 +370,9 @@ header nav > a {
 
 footer {
     width: 100vw;
-    height: 50rem;
     padding: 3.75rem 1.25rem 2.5em;
     list-style: none;
+    background-color: #252423;
 }
 
 footer ul {
@@ -302,11 +387,88 @@ footer ul li {
     margin: .75em;
 }
 
-footer li a {
-    color: #656462;
+footer a {
+    color: #8a8887;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    transition: 100ms;
+}
+
+footer a:hover, footer a:focus {
+    color: #e7e6e3;
+    text-decoration: underline;
+}
+
+footer ul:last-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+footer li a svg path {
+    fill: #656462;
+    transition: 250ms;
+}
+
+footer li a svg ellipse {
+    fill: #656462;
+    transition: 250ms;
+}
+
+footer li:hover a svg path, footer li:hover a svg path {
+    fill: var(--riotred);
+}
+
+footer li:hover a svg ellipse, footer li:hover a svg ellipse {
+    fill: var(--riotred);
+}
+
+footer div {
+    background-image: url(../images/distressed-stroke.svg);
+    height: 2px;
+    margin-top: 2em;
+}
+
+footer > a:first-of-type {
+    font-weight: 300;
+    font-size: .85em;
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+}
+
+footer > p {
+    font-size: .7em;
+    color: #8a8887;
+    font-weight: 300;
+    margin-top: 6em;
+    display: block;
+    text-align: center;
+}
+
+footer > a:last-of-type {
+    display: block;
+    font-size: .85em;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3em;
+    transition: 200ms;
+}
+
+footer > a:last-of-type:hover {
+    text-decoration: none;
+}
+
+footer > a path {
+    fill: #656462;
+    transition: 200ms;
+}
+
+footer > a:last-of-type:hover path {
+    fill: var(--riotred);
 }
 
 
@@ -397,7 +559,11 @@ footer li a {
 
 #home main section:nth-of-type(2) ul li a {
     text-decoration: none;
-    color: white;
+    color: #f9f9f9;
+}
+
+#home main section:nth-of-type(2) ul li a:hover article, #home main section:nth-of-type(2) ul li a:focus article {
+    outline: solid 1.5px var(--lightgrey);
 }
 
 #home main section:nth-of-type(2) ul li article {
@@ -405,8 +571,10 @@ footer li a {
     height: 5.5em;
     background-color: var(--grey);
     border-radius: 10px;
-    margin-bottom: .6em;
+    margin-bottom: .75em;
     position: relative;
+    transition: 100ms;
+    outline-offset: 3px;
 }
 
 #home main section:nth-of-type(2) ul li:first-of-type article {
@@ -509,15 +677,31 @@ footer li a {
     list-style: none;
 }
 
-#home main section:nth-of-type(3) ul li a {
+#home main section:nth-of-type(3) ul li {
     width: 87vw;
     height: 8em;
     background-color: var(--menugrey);
     display: block;
     border-radius: 10px;
     margin-top: 1.5em;
+    transition: 100ms;
+    outline-offset: 3px;
 }
 
+/* #home main section:nth-of-type(2) ~ section ul li:hover, #home main section:nth-of-type(2) ~ section ul li:focus {
+    border: solid 1px var(--lightgrey);
+    border-image: linear-gradient(200deg,rgba(10,10,10,0) 50%,rgba(10,10,10,.4) 90%);
+} */
+
+#home main section:nth-of-type(3) ul li:hover, #home main section:nth-of-type(3) ul li:focus {
+    outline: solid 1.5px var(--lightgrey);
+}
+
+#home main section:nth-of-type(3) ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
 
 
@@ -540,13 +724,25 @@ footer li a {
     list-style: none;
 }
 
-#home main section:nth-of-type(4) ul li a {
+#home main section:nth-of-type(4) ul li {
     width: 87vw;
     height: 8em;
     background-color: var(--menugrey);
     display: block;
     border-radius: 10px;
     margin-top: 1.5em;
+    outline-offset: 3px;
+}
+
+#home main section:nth-of-type(4) ul li:hover, #home main section:nth-of-type(4) ul li:focus {
+    outline: solid 1.5px var(--lightgrey);
+}
+
+
+#home main section:nth-of-type(4) ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 
@@ -570,13 +766,24 @@ footer li a {
     list-style: none;
 }
 
-#home main section:nth-of-type(5) ul li a {
+#home main section:nth-of-type(5) ul li {
     width: 87vw;
     height: 8em;
     background-color: var(--menugrey);
     display: block;
     border-radius: 10px;
     margin-top: 1.5em;
+    outline-offset: 3px;
+}
+
+#home main section:nth-of-type(5) ul li:hover, #home main section:nth-of-type(5) ul li:focus {
+    outline: solid 1.5px var(--lightgrey);
+}
+
+#home main section:nth-of-type(5) ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 
@@ -603,6 +810,7 @@ footer li a {
     padding-left: 1.5em;
     padding-right: 1.5em;
     overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     list-style: none;
@@ -616,7 +824,7 @@ footer li a {
     display: none;
 }
 
-#home main section:nth-of-type(6) ul li a {
+#home main section:nth-of-type(6) ul li {
     width: 75vw;
     height: 6em;
     background-color: var(--menugrey);
@@ -624,6 +832,21 @@ footer li a {
     border-radius: 10px;
     margin-top: 1.5em;
 }
+
+#home main section:nth-of-type(6) ul li img {
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+#home main section:nth-of-type(6) ul li:hover, #home main section:nth-of-type(6) ul li:focus {
+    border: solid 1px var(--lightgrey);
+    border-top: none;
+    border-bottom: none;
+}
+
+/* FIXME: Deze hover werkt niet door de ~ bij section 4 */
+
 
 
 
@@ -636,7 +859,6 @@ footer li a {
 
 #home main section:last-of-type {
     width: 100vw;
-    height: 50em;
     background-color: var(--lightgrey);
     display: flex;
     flex-direction: column;
@@ -699,9 +921,13 @@ footer li a {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.25em;
+    transition: 300ms
+}
+
+#home main section:last-of-type > a:hover, #home main section:last-of-type > a:focus {
+    opacity: .8;
 }
 
 #home main section:last-of-type img {
     width: 100vw;
-    height: 37.5em;
 }
