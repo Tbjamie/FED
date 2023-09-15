@@ -108,20 +108,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jamie Tirbeni                           | student 2          | student 3    | student 4        |
-  | ---                                     | ---                | ---          | ---              |
-  | Ik wil mijn HTML laten nakijken         | en dit             | en ik dit    | en dan ik dat    |
-  | Ik wil vragen wat "GET" doet bij forms  | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...                                     | ...                | ...          | ...              |
+  | Jamie Tirbeni                              | Tim                 | Sanne        |  Bente        |
+  | ---                                        | ---                 | ---          | ---              |
+  | Ik wil mijn HTML laten nakijken            | HTML laten nakijken |  Geen specifieke vraag | Een vraag over accessibility  |
+  | Ik wil vragen wat "GET" doet bij forms     | ...                 |              | dit wil ik zeker |
+  | Ik heb een vraag over SVG code             | ...                 | ...          | ...              |
+  | Ik heb een vraag over Border gap           | ...                 | ...          | ...              |
+  | Ik wil iets vragen over een menu dropdown  | ...                 | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Geleerd over "GET" vs "PUSH" in de forms tag
+  - Meer geleerd over "aside" en hoe je die moet gebruiken
+  - HTML pagina breakdown gedaan met elkaar
+  - We hebben het gehad over heading levels
+  - Mijn vragen zijn beantwoord
 
 </details>
 
