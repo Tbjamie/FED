@@ -111,7 +111,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Jamie Tirbeni                              | Tim                 | Sanne        |  Bente        |
   | ---                                        | ---                 | ---          | ---              |
   | Ik wil mijn HTML laten nakijken            | HTML laten nakijken |  Geen specifieke vraag | Een vraag over accessibility  |
-  | Ik wil vragen wat "GET" doet bij forms     | ...                 |              | dit wil ik zeker |
+  | Ik wil vragen wat "GET" doet bij forms     | ...                 | ...             | ... |
   | Ik heb een vraag over SVG code             | ...                 | ...          | ...              |
   | Ik heb een vraag over Border gap           | ...                 | ...          | ...              |
   | Ik wil iets vragen over een menu dropdown  | ...                 | ...          | ...              |
