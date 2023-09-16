@@ -70,28 +70,6 @@ header ul li:last-of-type button:first-of-type {
     transition: 250ms;
 }
 
-/* header {
-    width: 100vw;
-    height: 80px;
-    background-color: var(--headergrey);
-    position: fixed;
-    z-index: 100;
-    border-bottom: 2px solid var(--grey);
-}
-
-.headerbar-transparent {
-    width: 100vw;
-    height: 80px;
-    background-color: transparent;
-    position: fixed;
-    z-index: 1;
-    border-bottom: none;
-}
-
-.headerbar-transparent nav .menudiv a:last-of-type {
-    background-color: rgba(255, 255, 255, 0.2);
-} */
-
 header ul {
     display: flex;
     justify-content: space-between;
@@ -127,9 +105,11 @@ header img[alt$="Language"] {
     width: 50%;
 }
 
-header ul li:first-of-type a img[alt$="button"] {
-    height: 40%;
-    object-fit: contain;
+header > ul li:first-of-type:hover a svg, header > ul li:first-of-type:focus a svg {
+    fill: var(--red);
+}
+
+header ul li:first-of-type a svg {
     margin-left: .5em;
 }
 
@@ -141,9 +121,23 @@ header ul li a {
     height: 3.5em;
 }
 
-header ul li:first-of-type a img {
-    height: 50%;
-    object-fit: contain;
+header ul li:first-of-type a svg {
+    fill: white;
+    transition: 100ms;
+}
+
+header ul li:first-of-type a svg:last-of-type {
+    fill: #7F7F7F;
+    margin-left: 1em;
+    transition: 100ms;
+}
+
+header ul li:first-of-type a:hover svg:last-of-type, header ul li:first-of-type a:focus svg:last-of-type {
+    fill: var(--red);
+}
+
+header ul li:first-of-type a svg:hover, header ul li:first-of-type a svg:focus {
+    fill: var(--red);
 }
 
 header ul li:last-of-type button {
@@ -253,6 +247,7 @@ header nav ul li {
 
 header nav ul li:hover, header nav ul li:focus {
     background-color: var(--menugrey);
+    cursor: pointer;
 }
 
 /* FIXME: FIX HET HOVER EFFECT VAN DE NAV DROPDOWN */
@@ -485,6 +480,14 @@ footer > a:last-of-type:hover path {
     width: 100vw;
 }
 
+#home h1 {
+    opacity: 0;
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+}
+
 #home main section:first-of-type {
     width: 100vw;
     height: 75vh;
@@ -609,13 +612,37 @@ footer > a:last-of-type:hover path {
     z-index: 1;
 }
 
+#home main section:nth-of-type(2) ul li:first-of-type article svg {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background-color: var(--headergrey);
+    border: 3px solid var(--headergrey);
+    border-radius: 10px;
+}
+
+#home main section:nth-of-type(2) ul li article svg {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    background-color: var(--headergrey);
+    border: 3px solid var(--headergrey);
+    border-radius: 10px;
+}
+
 #home main section:nth-of-type(2) ul li article h3 {
     position: absolute;
     max-width: 80%;
     top: 40%;
     left: 1em;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 600;
+    z-index: 1;
+}
+
+#home main section:nth-of-type(2) ul li:nth-of-type(2) article h3, #home main section:nth-of-type(2) ul li:nth-of-type(3) article h3, #home main section:nth-of-type(2) ul li:nth-of-type(4) article h3, #home main section:nth-of-type(2) ul li:nth-of-type(5) article h3 {
+    max-width: 50%;
+    top: 15%;
 }
 
 #home main section:nth-of-type(2) ul li article p {
@@ -626,6 +653,11 @@ footer > a:last-of-type:hover path {
     color: #6F6F6F;
     text-transform: uppercase;
     font-size: .85em;
+    z-index: 1;
+}
+
+#home main section:nth-of-type(2) ul li:nth-of-type(2) article p, #home main section:nth-of-type(2) ul li:nth-of-type(3) article p, #home main section:nth-of-type(2) ul li:nth-of-type(4) article p, #home main section:nth-of-type(2) ul li:nth-of-type(5) article p {
+    bottom: 1em;
 }
 
 #home main section:nth-of-type(2) ul li:last-of-type {
@@ -642,6 +674,30 @@ footer > a:last-of-type:hover path {
     border-radius: 8px;
     font-weight: bold;
     font-size: .813rem;
+    transition: 250ms;
+}
+
+#home main section:nth-of-type(2) ul li:last-of-type a:hover, #home main section:nth-of-type(2) ul li:last-of-type a:focus {
+    background-color: #3F3F3F;
+}
+
+#home main section:nth-of-type(2) ul li article::after {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 100%;
+    background-color: var(--grey);
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#home main section:nth-of-type(2) ul li:hover article::after, #home main section:nth-of-type(2) ul li:focus article::after {
+    background-color: #3F3F3F;
+}
+
+#home main section:nth-of-type(2) ul li:first-of-type:hover article::after, #home main section:nth-of-type(2) ul li:first-of-type:focus article::after {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #home main section:nth-of-type(2) ul li:nth-of-type(2) article {
@@ -649,9 +705,32 @@ footer > a:last-of-type:hover path {
     background-size: 55%;
     background-position-x: -10%;
     background-position-y: center;
+    position: relative;
 }
 
+#home main section:nth-of-type(2) ul li:nth-of-type(3) article {
+    background-image: url(../images/082623-7-1-sunset-cg-banner.jpg);
+    background-size: 55%;
+    background-position-x: -10%;
+    background-position-y: center;
+    position: relative;
+}
 
+#home main section:nth-of-type(2) ul li:nth-of-type(4) article {
+    background-image: url(../images/vct-r2la-header.png);
+    background-size: 55%;
+    background-position-x: -10%;
+    background-position-y: center;
+    position: relative;
+}
+
+#home main section:nth-of-type(2) ul li:nth-of-type(5) article {
+    background-image: url(../images/w23-primer-header-img-v1-0.jpg);
+    background-size: 80%;
+    background-position-x: -10%;
+    background-position-y: center;
+    position: relative;
+}
 
 
 
@@ -904,6 +983,11 @@ footer > a:last-of-type:hover path {
     color: #656462;
     line-height: 1.2;
     letter-spacing: .09em;
+    transition: 200ms;
+}
+
+#home main section:last-of-type article a:hover, #home main section:last-of-type article a:focus  {
+    background-color: rgba(173,172,170,0.5);
 }
 
 #home main section:last-of-type article a span {
