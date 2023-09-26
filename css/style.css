@@ -10,12 +10,6 @@
     box-sizing: border-box;
 }
 
-::selection {
-    color: #e7e6e3;
-    background: var(--riotred);
-    text-shadow: none;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -32,12 +26,19 @@ section ul a::selection {
     --grey: #1f1f1f;
     --headergrey: #111;
     --menugrey: #2f2f2f;
+    --semiwhitetext: #e7e6e3;
+}
+
+::selection {
+    color: var(--semiwhitetext);
+    background: var(--riotred);
+    text-shadow: none;
 }
 
 body {
     background-color: var(--grey);
     font-family: sans-serif;
-    color: #e7e6e3;
+    color: var(--semiwhitetext);
 }
 
 h2 {
@@ -61,7 +62,7 @@ header {
     transition: 250ms;
 }
 
-header > ul li:first-of-type {
+header>ul li:first-of-type {
     margin-left: .5em;
 }
 
@@ -105,7 +106,8 @@ header img[alt$="Language"] {
     width: 50%;
 }
 
-header > ul li:first-of-type:hover a svg, header > ul li:first-of-type:focus a svg {
+header>ul li:first-of-type:hover a svg,
+header>ul li:first-of-type:focus a svg {
     fill: var(--red);
 }
 
@@ -132,11 +134,13 @@ header ul li:first-of-type a svg:last-of-type {
     transition: 100ms;
 }
 
-header ul li:first-of-type a:hover svg:last-of-type, header ul li:first-of-type a:focus svg:last-of-type {
+header ul li:first-of-type a:hover svg:last-of-type,
+header ul li:first-of-type a:focus svg:last-of-type {
     fill: var(--red);
 }
 
-header ul li:first-of-type a svg:hover, header ul li:first-of-type a svg:focus {
+header ul li:first-of-type a svg:hover,
+header ul li:first-of-type a svg:focus {
     fill: var(--red);
 }
 
@@ -201,7 +205,7 @@ header nav ul li button {
 
 header nav ul li a {
     text-transform: uppercase;
-    color: #e7e6e3;
+    color: var(--semiwhitetext);
     text-decoration: none;
     font-size: 1em;
     line-height: 1.5;
@@ -219,7 +223,7 @@ header nav ul li:first-of-type {
     margin-right: 0;
 }
 
-header nav > button {
+header nav>button {
     background-color: var(--menugrey);
     border-radius: 15px;
     display: flex;
@@ -234,7 +238,7 @@ header nav > button {
     cursor: pointer;
 }
 
-header nav > button img {
+header nav>button img {
     width: 30%;
     object-fit: contain;
 }
@@ -245,7 +249,8 @@ header nav ul li {
     border-radius: 8px;
 }
 
-header nav ul li:hover, header nav ul li:focus {
+header nav ul li:hover,
+header nav ul li:focus {
     background-color: var(--menugrey);
     cursor: pointer;
 }
@@ -255,7 +260,7 @@ header nav ul li:hover, header nav ul li:focus {
 header nav ul li details {
     border: none;
     background-color: transparent;
-    color: #e7e6e3;
+    color: var(--semiwhitetext);
     font-size: 1em;
     line-height: 1.5;
     font-weight: bold;
@@ -293,7 +298,7 @@ header nav ul li details:last-of-type ul li a {
 }
 
 header nav ul li details[open] ul li a:hover {
-    color: #e7e6e3;
+    color: var(--semiwhitetext);
 }
 
 header nav ul li details summary {
@@ -351,7 +356,7 @@ header nav form button img {
     height: 100%;
 }
 
-header nav > a {
+header nav>a {
     background-color: var(--riotred);
     color: black;
     text-decoration: none;
@@ -390,8 +395,9 @@ footer a {
     transition: 100ms;
 }
 
-footer a:hover, footer a:focus {
-    color: #e7e6e3;
+footer a:hover,
+footer a:focus {
+    color: var(--semiwhitetext);
     text-decoration: underline;
 }
 
@@ -412,11 +418,13 @@ footer li a svg ellipse {
     transition: 250ms;
 }
 
-footer li:hover a svg path, footer li:hover a svg path {
+footer li:hover a svg path,
+footer li:hover a svg path {
     fill: var(--riotred);
 }
 
-footer li:hover a svg ellipse, footer li:hover a svg ellipse {
+footer li:hover a svg ellipse,
+footer li:hover a svg ellipse {
     fill: var(--riotred);
 }
 
@@ -426,7 +434,7 @@ footer div {
     margin-top: 2em;
 }
 
-footer > a:first-of-type {
+footer>a:first-of-type {
     font-weight: 300;
     font-size: .85em;
     display: block;
@@ -434,7 +442,7 @@ footer > a:first-of-type {
     margin-top: 2em;
 }
 
-footer > p {
+footer>p {
     font-size: .7em;
     color: #8a8887;
     font-weight: 300;
@@ -443,7 +451,7 @@ footer > p {
     text-align: center;
 }
 
-footer > a:last-of-type {
+footer>a:last-of-type {
     display: block;
     font-size: .85em;
     font-weight: 300;
@@ -453,16 +461,16 @@ footer > a:last-of-type {
     transition: 200ms;
 }
 
-footer > a:last-of-type:hover {
+footer>a:last-of-type:hover {
     text-decoration: none;
 }
 
-footer > a path {
+footer>a path {
     fill: #656462;
     transition: 200ms;
 }
 
-footer > a:last-of-type:hover path {
+footer>a:last-of-type:hover path {
     fill: var(--riotred);
 }
 
@@ -478,6 +486,7 @@ footer > a:last-of-type:hover path {
 
 #home main {
     width: 100vw;
+    position: relative;
 }
 
 #home h1 {
@@ -502,14 +511,14 @@ footer > a:last-of-type:hover path {
     position: relative;
 }
 
-#home main section:first-of-type article {
+#home main section:first-of-type div {
     display: block;
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 70vh;
+    height: 100%;
     opacity: 10%;
 }
 
@@ -526,8 +535,8 @@ footer > a:last-of-type:hover path {
 #home main section:nth-of-type(2) {
     background-color: black;
     width: 100vw;
-    height: 55em;
     position: relative;
+    padding-bottom: 6em;
 }
 
 #home main section:nth-of-type(2)::after {
@@ -553,7 +562,6 @@ footer > a:last-of-type:hover path {
 
 #home main section:nth-of-type(2) ul {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -565,7 +573,8 @@ footer > a:last-of-type:hover path {
     color: #f9f9f9;
 }
 
-#home main section:nth-of-type(2) ul li a:hover article, #home main section:nth-of-type(2) ul li a:focus article {
+#home main section:nth-of-type(2) ul li a:hover article,
+#home main section:nth-of-type(2) ul li a:focus article {
     outline: solid 1.5px var(--lightgrey);
 }
 
@@ -604,10 +613,6 @@ footer > a:last-of-type:hover path {
     border-radius: 10px;
 }
 
-#home main section:nth-of-type(2) ul li:first-of-type article h3 {
-    z-index: 1;
-}
-
 #home main section:nth-of-type(2) ul li:first-of-type article p {
     z-index: 1;
 }
@@ -640,7 +645,10 @@ footer > a:last-of-type:hover path {
     z-index: 1;
 }
 
-#home main section:nth-of-type(2) ul li:nth-of-type(2) article h3, #home main section:nth-of-type(2) ul li:nth-of-type(3) article h3, #home main section:nth-of-type(2) ul li:nth-of-type(4) article h3, #home main section:nth-of-type(2) ul li:nth-of-type(5) article h3 {
+#home main section:nth-of-type(2) ul li:nth-of-type(2) article h3,
+#home main section:nth-of-type(2) ul li:nth-of-type(3) article h3,
+#home main section:nth-of-type(2) ul li:nth-of-type(4) article h3,
+#home main section:nth-of-type(2) ul li:nth-of-type(5) article h3 {
     max-width: 50%;
     top: 15%;
 }
@@ -656,7 +664,10 @@ footer > a:last-of-type:hover path {
     z-index: 1;
 }
 
-#home main section:nth-of-type(2) ul li:nth-of-type(2) article p, #home main section:nth-of-type(2) ul li:nth-of-type(3) article p, #home main section:nth-of-type(2) ul li:nth-of-type(4) article p, #home main section:nth-of-type(2) ul li:nth-of-type(5) article p {
+#home main section:nth-of-type(2) ul li:nth-of-type(2) article p,
+#home main section:nth-of-type(2) ul li:nth-of-type(3) article p,
+#home main section:nth-of-type(2) ul li:nth-of-type(4) article p,
+#home main section:nth-of-type(2) ul li:nth-of-type(5) article p {
     bottom: 1em;
 }
 
@@ -677,7 +688,8 @@ footer > a:last-of-type:hover path {
     transition: 250ms;
 }
 
-#home main section:nth-of-type(2) ul li:last-of-type a:hover, #home main section:nth-of-type(2) ul li:last-of-type a:focus {
+#home main section:nth-of-type(2) ul li:last-of-type a:hover,
+#home main section:nth-of-type(2) ul li:last-of-type a:focus {
     background-color: #3F3F3F;
 }
 
@@ -692,11 +704,13 @@ footer > a:last-of-type:hover path {
     border-bottom-left-radius: 8px;
 }
 
-#home main section:nth-of-type(2) ul li:hover article::after, #home main section:nth-of-type(2) ul li:focus article::after {
+#home main section:nth-of-type(2) ul li:hover article::after,
+#home main section:nth-of-type(2) ul li:focus article::after {
     background-color: #3F3F3F;
 }
 
-#home main section:nth-of-type(2) ul li:first-of-type:hover article::after, #home main section:nth-of-type(2) ul li:first-of-type:focus article::after {
+#home main section:nth-of-type(2) ul li:first-of-type:hover article::after,
+#home main section:nth-of-type(2) ul li:first-of-type:focus article::after {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -745,8 +759,10 @@ footer > a:last-of-type:hover path {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 57.5em;
+    padding-bottom: 2em;
 }
+
+/* TODO: ALLE VASTE HEIGHTS WEGHALEN */
 
 #home main section:nth-of-type(3) h2 {
     margin-top: 2.5em;
@@ -772,7 +788,8 @@ footer > a:last-of-type:hover path {
     border-image: linear-gradient(200deg,rgba(10,10,10,0) 50%,rgba(10,10,10,.4) 90%);
 } */
 
-#home main section:nth-of-type(3) ul li:hover, #home main section:nth-of-type(3) ul li:focus {
+#home main section:nth-of-type(3) ul li:hover,
+#home main section:nth-of-type(3) ul li:focus {
     outline: solid 1.5px var(--lightgrey);
 }
 
@@ -796,7 +813,7 @@ footer > a:last-of-type:hover path {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 24em;
+    padding-bottom: 2em;
 }
 
 #home main section:nth-of-type(4) ul {
@@ -813,7 +830,8 @@ footer > a:last-of-type:hover path {
     outline-offset: 3px;
 }
 
-#home main section:nth-of-type(4) ul li:hover, #home main section:nth-of-type(4) ul li:focus {
+#home main section:nth-of-type(4) ul li:hover,
+#home main section:nth-of-type(4) ul li:focus {
     outline: solid 1.5px var(--lightgrey);
 }
 
@@ -838,7 +856,7 @@ footer > a:last-of-type:hover path {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 24em;
+    padding-bottom: 2em;
 }
 
 #home main section:nth-of-type(5) ul {
@@ -855,7 +873,8 @@ footer > a:last-of-type:hover path {
     outline-offset: 3px;
 }
 
-#home main section:nth-of-type(5) ul li:hover, #home main section:nth-of-type(5) ul li:focus {
+#home main section:nth-of-type(5) ul li:hover,
+#home main section:nth-of-type(5) ul li:focus {
     outline: solid 1.5px var(--lightgrey);
 }
 
@@ -879,9 +898,9 @@ footer > a:last-of-type:hover path {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 20em;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 8em;
 }
 
 #home main section:nth-of-type(6) ul {
@@ -918,14 +937,12 @@ footer > a:last-of-type:hover path {
     object-fit: contain;
 }
 
-#home main section:nth-of-type(6) ul li:hover, #home main section:nth-of-type(6) ul li:focus {
+#home main section:nth-of-type(6) ul li:hover,
+#home main section:nth-of-type(6) ul li:focus {
     border: solid 1px var(--lightgrey);
     border-top: none;
     border-bottom: none;
 }
-
-/* FIXME: Deze hover werkt niet door de ~ bij section 4 */
-
 
 
 
@@ -974,7 +991,7 @@ footer > a:last-of-type:hover path {
     height: 9em;
     border-radius: 10px;
     padding: 1em;
-    background-color: rgba(173,172,170,.2);
+    background-color: rgba(173, 172, 170, .2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -986,8 +1003,9 @@ footer > a:last-of-type:hover path {
     transition: 200ms;
 }
 
-#home main section:last-of-type article a:hover, #home main section:last-of-type article a:focus  {
-    background-color: rgba(173,172,170,0.5);
+#home main section:last-of-type article a:hover,
+#home main section:last-of-type article a:focus {
+    background-color: rgba(173, 172, 170, 0.5);
 }
 
 #home main section:last-of-type article a span {
@@ -995,7 +1013,7 @@ footer > a:last-of-type:hover path {
     color: black;
 }
 
-#home main section:last-of-type > a {
+#home main section:last-of-type>a {
     width: 18rem;
     margin-bottom: 2.5em;
     padding: 1.3rem 1rem;
@@ -1008,10 +1026,647 @@ footer > a:last-of-type:hover path {
     transition: 300ms
 }
 
-#home main section:last-of-type > a:hover, #home main section:last-of-type > a:focus {
+#home main section:last-of-type>a:hover,
+#home main section:last-of-type>a:focus {
     opacity: .8;
 }
 
 #home main section:last-of-type img {
     width: 100vw;
 }
+
+
+/**********************/
+/**********************/
+/*     ABOUT RIOT     */
+/**********************/
+/**********************/
+
+
+#about-riot {
+    background-color: #252423;
+    scroll-behavior: smooth;
+}
+
+#about-riot main {
+    padding-top: 80px;
+}
+
+
+/**********************/
+/**********************/
+/*    ABT-RIOT S1     */
+/**********************/
+/**********************/
+
+
+#about-riot section:first-of-type {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-riot section:first-of-type::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 42, 41, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about-riot section:first-of-type img {
+    height: 100vh;
+    max-width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+}
+
+#about-riot section:first-of-type article {
+    background-color: var(--riotred);
+    position: absolute;
+    top: 45%;
+    padding: .25em .75em;
+    text-align: center;
+}
+
+#about-riot section:first-of-type article p {
+    text-transform: uppercase;
+    font-size: .625rem;
+    letter-spacing: .12em;
+    font-weight: normal;
+}
+
+#about-riot section:first-of-type h1 {
+    position: absolute;
+    text-transform: capitalize;
+    color: var(--semiwhitetext);
+    font-size: 2.25rem;
+    font-weight: bolder;
+    top: 50%;
+}
+
+
+
+
+/**********************/
+/**********************/
+/*    ABT-RIOT S2     */
+/**********************/
+/**********************/
+
+#about-riot section:nth-of-type(2) {
+    background-color: var(--semiwhitetext);
+    color: var(--headergrey);
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-bottom: 4em;
+}
+
+#about-riot section blockquote {
+    font-weight: bold;
+    font-size: 1.75em;
+    text-align: center;
+    padding: 3em 1em 0.5em 1em;
+}
+
+#about-riot section:nth-of-type(2) p {
+    margin-top: 1.25em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#about-riot section:nth-of-type(2) p a {
+    font-weight: bold;
+    color: var(--headergrey);
+}
+
+#about-riot section:nth-of-type(2) p a:hover,
+#about-riot section:nth-of-type(2) p a:focus {
+    text-decoration-color: var(--riotred);
+    -moz-text-decoration-color: var(--riotred);
+}
+
+#about-riot section:nth-of-type(2) p:last-of-type {
+    margin-bottom: 2em;
+}
+
+
+/**********************/
+/**********************/
+/*    ABT-RIOT S3     */
+/**********************/
+/**********************/
+
+#about-riot section:nth-of-type(3) {
+    background-color: #dbd9d6;
+    color: var(--headergrey);
+    width: 100vw;
+    padding-top: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#about-riot section h2 {
+    font-size: 1.875rem;
+    line-height: 1.133;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+
+#about-riot section details {
+    width: 100vw;
+    color: var(--semiwhitetext);
+    cursor: default;
+    transition: 250ms;
+    background-color: #252423;
+}
+
+#about-riot section details summary {
+    color: white;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7em;
+    position: relative;
+}
+
+#about-riot section details summary div {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#about-riot section details[open] summary div {
+    display: none;
+}
+
+#about-riot section details summary span {
+    z-index: 1;
+}
+
+#about-riot section details summary svg {
+    outline: 1px solid white;
+    outline-offset: 10px;
+    border-radius: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 1;
+}
+
+#about-riot section details summary svg path {
+    fill: white;
+}
+
+#about-riot section details p {
+    padding: .5em 1.25rem;
+    font-weight: 300;
+}
+
+#about-riot section details li {
+    margin-left: 1.6em;
+}
+
+#about-riot section details li::marker {
+    content: '•';
+    margin-left: 0;
+
+}
+
+#about-riot section details[open] {
+    background-color: var(--menugrey);
+}
+
+#about-riot section details:first-of-type summary {
+    background-image: url("../images/aboutriotdetail1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-riot section details:first-of-type[open] summary {
+    background-image: none;
+}
+
+#about-riot section details:nth-of-type(2) summary {
+    background-image: url("../images/aboutriotdetail2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-riot section details:nth-of-type(2)[open] summary {
+    background-image: none;
+}
+
+#about-riot section details:nth-of-type(3) summary {
+    background-image: url("../images/aboutriotdetail3.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-riot section details:nth-of-type(3)[open] summary {
+    background-image: none;
+}
+
+#about-riot section details:nth-of-type(4) summary {
+    background-image: url("../images/aboutriotdetail4.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-riot section details:nth-of-type(4)[open] summary {
+    background-image: none;
+}
+
+#about-riot section details:nth-of-type(5) summary {
+    background-image: url("../images/aboutriotdetail5.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-riot section details:nth-of-type(5)[open] summary {
+    background-image: none;
+}
+
+#about-riot section details ul li:last-of-type {
+    padding-bottom: 3em;
+}
+
+#about-riot section:nth-of-type(3) article {
+    margin-top: 2.5em;
+}
+
+#about-riot section:nth-of-type(3) article img {
+    width: 90vw;
+}
+
+#about-riot section:nth-of-type(3) article p {
+    max-width: 80vw;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#about-riot section article a,
+#about-riot section:nth-of-type(4) a,
+#about-riot section:nth-of-type(5) a {
+    font-size: .75em;
+    padding: 1em 3.5em;
+    text-decoration: none;
+    color: white;
+    background-color: var(--riotred);
+    border-radius: 30px;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: .5em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 800ms;
+}
+
+#about-riot section article a:hover,
+#about-riot section:nth-of-type(4) a:hover,
+#about-riot section:nth-of-type(5) a:hover {
+    text-decoration: underline;
+}
+
+#about-riot section:nth-of-type(3) article a::before,
+#about-riot section:nth-of-type(4) a::before,
+#about-riot section:nth-of-type(5) a::before {
+    content: "/";
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+#about-riot section:nth-of-type(3) article a::after,
+#about-riot section:nth-of-type(5) a::after {
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    background-color: var(--menugrey);
+    transform-origin: bottom;
+    transition: 200ms;
+    opacity: 0;
+    transform: skewY(-5deg);
+}
+
+#about-riot section:nth-of-type(3) article a:hover::after,
+#about-riot section:nth-of-type(4) a:hover::after,
+#about-riot section:nth-of-type(5) a:hover::after {
+    top: -1em;
+    opacity: 1;
+}
+
+#about-riot section:nth-of-type(3) article:last-of-type a {
+    margin-bottom: 6em;
+}
+
+#about-riot section:nth-of-type(3) h3 {
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+#about-riot section:nth-of-type(3) p {
+    margin-bottom: 1em;
+}
+
+
+
+/**********************/
+/**********************/
+/*    ABT-RIOT S4     */
+/**********************/
+/**********************/
+
+#about-riot section:nth-of-type(4) {
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-riot section:nth-of-type(4)::after {
+    content: '';
+    background-color: #252423;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: -1.75em;
+    left: 0;
+    transform: skewY(-4deg);
+}
+
+#about-riot section:nth-of-type(4) h2 {
+    z-index: 1;
+}
+
+#about-riot section:nth-of-type(4) p {
+    max-width: 85vw;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    color: var(--semiwhitetext);
+    z-index: 1;
+}
+
+#about-riot section:nth-of-type(4) a {
+    margin-bottom: 6em;
+}
+
+#about-riot section:nth-of-type(4) a:hover {
+    color: var(--riotred);
+}
+
+#about-riot section:nth-of-type(4) a::after {
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    background-color: white;
+    transform-origin: bottom;
+    transition: 200ms;
+    opacity: 0;
+    transform: skewY(-5deg);
+}
+
+
+
+/**********************/
+/**********************/
+/*    ABT-RIOT S5     */
+/**********************/
+/**********************/
+
+#about-riot section:nth-of-type(5) {
+    position: relative;
+    width: 100vw;
+    background-color: var(--semiwhitetext);
+    color: var(--headergrey);
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-riot section:nth-of-type(5)::after {
+    content: '';
+    background-color: var(--semiwhitetext);
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: -2em;
+    left: 0;
+    transform: skewY(6deg);
+}
+
+#about-riot section:nth-of-type(5) h2 {
+    z-index: 1;
+}
+
+#about-riot section:nth-of-type(5) a {
+    margin-bottom: 2em;
+    z-index: 1;
+}
+
+
+
+/****************************/
+/****************************/
+/*   RESPONSIVE HOME 375px  */
+/****************************/
+/****************************/
+
+@media screen and (min-width: 375px) {
+
+    #home main section:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home main section:nth-of-type(2) h2 {
+        padding-top: 1.5em;
+        padding-bottom: .5em;
+        margin-left: 0;
+        line-height: 1.5;
+    }
+
+    #home main section:nth-of-type(2) h2 span {
+        display: inline-block;
+    }
+
+    #home main section:nth-of-type(3) ul li {
+        height: 9.5em;
+    }
+
+    #home main section:nth-of-type(4) ul li {
+        height: 9.5em;
+    }
+
+    #home main section:nth-of-type(5) ul li {
+        height: 9.5em;
+    }
+
+    #home main section:nth-of-type(6) ul li {
+        height: 8em;
+    }
+
+    #home main section:last-of-type article a {
+        padding: 1em 5em;
+    }
+}
+
+
+/****************************/
+/****************************/
+/*   RESPONSIVE HOME 425px  */
+/****************************/
+/****************************/
+
+@media screen and (min-width: 425px) {
+
+    header nav {
+        transform: translateX(60em);
+    }
+
+    header nav>a {
+        padding: 0.85em 13em;
+    }
+
+    header ul li:first-of-type a svg:first-of-type {
+        width: 100px;
+        height: 30px;
+    }
+
+    header ul li:first-of-type a svg:last-of-type {
+        width: 20px;
+        height: 7px;
+    }
+
+    #home main section:nth-of-type(2)::after {
+        transform: skewY(6deg);
+    }
+
+    #home main section:nth-of-type(2) ul li:first-of-type article {
+        height: 11em;
+    }
+
+    #home main section:nth-of-type(2) ul li article h3 {
+        top: 50%;
+    }
+
+    #home main section:nth-of-type(2) ul li article {
+        height: 6em;
+    }
+
+    #home main section:nth-of-type(3) ul li {
+        height: 11em;
+    }
+
+    #home main section:nth-of-type(4) ul li {
+        height: 11em;
+    }
+
+    #home main section:nth-of-type(5) ul li {
+        height: 11em;
+    }
+
+    #home main section:nth-of-type(6) ul li {
+        height: 9em;
+    }
+
+    #home main section:last-of-type article a {
+        padding: 1em 5.75em;
+    }
+
+    #home main section:last-of-type>a {
+        width: 24rem;
+    }
+
+
+/****************************/
+/****************************/
+/* RESPONSIVE ABT-RT 425px  */
+/****************************/
+/****************************/
+
+    #about-riot section blockquote {
+        padding: 3em 1rem 0.5em 1rem;
+    }
+
+    #about-riot section h2 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+/****************************/
+/****************************/
+/*   RESPONSIVE HOME 760px  */
+/****************************/
+/****************************/
+
+@media screen and (min-width: 750px) {
+
+    header nav, header nav ul {
+        width: 65vw;
+    }
+
+    header nav>a {
+        padding: 0.85em 16em;
+    }
+
+    /* #home main::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    } */
+
+    #home main section:nth-of-type(2)::after {
+        transform: skewY(4deg);
+    }
+}
+
+
+
+
+/****************************/
+/****************************/
+/* RESPONSIVE ABT-RT 760px  */
+/****************************/
+/****************************/
