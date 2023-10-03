@@ -81,12 +81,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="./readme-images/FED-breakdown-schets.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -138,26 +132,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik was deze week ziek dus ik had niet veel progressie gemaakt, maar het was me wel gelukt om het hamburger menu werkent te krijgen.
+  <img src="./readme-images/ScreenshotHamburgermenu.png">
+
+  Voor de rest wil ik aankomende week gaan werken aan het responsive maken van mijn website.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Jamie Tirbeni                              | Tim                 | Sanne        |  Bente        |
+  | ---                                        | ---                 | ---          | ---              |
+  | Ik had deze week niet echt vragen, omdat ik niet veel heb kunnen doen aangezien ik ziek was. | Vraag over hamburger menu |  Geen specifieke vraag | Een vraag over responsive  |
+  | ...     | ...                 | ...             | Een vraag over nav en uitklap menu |
+  | ...        | ...                 | ...          | Een vraag over grid voor foto galerij           |
+  | ...         | ...                 | ...          | ...              |
+  | ...  | ...                 | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Het werk ziet er goed uit dus ik moet zo doorgaan
+  - De code is gecontroleerd en die zag er goed en netjes uit
 
 </details>
 
@@ -173,6 +170,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  <img src="./readme-images/test1.HEIC">
+  <img src="./readme-images/test2.HEIC">
+  <img src="./readme-images/test3.HEIC">
+  <img src="./readme-images/test4.HEIC">
+  <img src="./readme-images/test4.HEIC">
+
+  Verbeteringen na test:
+
+  - Na het maken van deze tekst heb ik bij alle images alt text neergezet.
+  - Ik heb geen video's meer op autoplay aanstaan.
+  - Ik heb dark mode toegepast
+
+
 </details>
 
 
@@ -187,24 +197,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het responsive maken van de website gaat tot nu toe best goed en ik ben daar bijna klaar mee.
+
+  <img src="./readme-images/ssresponsive1.png">
+  <img src="./readme-images/ssresponsive2.png">
+  <img src="./readme-images/ssresponsive3.png">
+
+  Ik moet nu alleen nog 2 breakpoints maken.
+
+
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+    | Jamie Tirbeni                              | Tim                 | Sanne        |  Bente        |
+  | ---                                        | ---                 | ---          | ---              |
+  | Ik heb een vraagje over een animatie       | Vraag over responsive |  Vraag over een img in de h1 | Een vraag over reponsive  |
+  | ...     | Vraag over focus state                | ...             | Een vraag over de footer |
+  | ...             | Laatste check van de website              | ...          | Een vraag over reponsive javascript              |
+  | ...           | ...                 | ...          | ...              |
+  | ...  | ...                 | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - We hebben het gehad over input fields
+  - We hebben het gehad over field sets
+  - We hebben hey gehad over formulieren en de validation daarvan
+  - We hebben het gehad over wat responsive is
+  - De animatie is niet haalbaar voor nu
 
 </details>
 
@@ -218,19 +241,41 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/karakteristiekss1.png" width="375px">
+  <img src="./readme-images/karakteristiekss2.png" width="375px">
+  <img src="./readme-images/karakteristiekss3.png" width="375px">
+  <img src="./readme-images/karakteristiekss4.png" width="375px">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Het responsive maken van de website ging erg goed en ook het maken van het hamburger menu ging goed.
+
+  <img src="./readme-images/readme-images/ScreenshotHamburgermenu.png" width="375px" alt="top">
+  Dit is mijn hamburger menu
+
+  <img src="./readme-images/ssresponsive1.png" width="375px" alt="top">
+  Een repsonsive versie van mij site.
+
+  <img src="./readme-images/ssresponsive2.png" width="375px" alt="top">
+  Een repsonsive versie van mij site. waarbij er al iets meer is toegevoegd.
+
+  <img src="./readme-images/ssresponsive3.png" width="375px" alt="top">
+  Een repsonsive versie van mij site waarbij de lay-out is veranderd.
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="./readme-images/nietgelukt1.png" width="375px" alt="bummer">
+  Helaas is het niet gelukt om deze animatie te maken.
+
+  <img src="./readme-images/karakteristiekss4.png" width="375px">
+  Dit is wel gelukt, maar helaas niet op de mooiste manier qua code.. Dus dat vond ik wel jammer.
+
+
+
 </details>
 
 
@@ -246,8 +291,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.eddymens.com/blog/how-to-remove-the-arrow-from-the-html-details-tag (Gebruikt om de arrow in de details tag weg te halen)
+  2. https://css-tricks.com/practical-css-scroll-snapping/ (Gebruikt voor scroll-snap in section 6)
+  3. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp (Gebruikt voor het weghalen van de scrollbar in section 6)
+  4. https://www.freecodecamp.org/news/check-if-an-item-is-in-an-array-in-javascript-js-contains-with-array-includes/#:~:text=You%20can%20use%20the%20includes,the%20item%20doesn't%20exist. Gebruikt voor een javascript functie
 
 </details>
