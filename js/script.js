@@ -107,7 +107,7 @@ details.forEach((targetDetail) => {
 
 function changeDetailsBackground() {
     if (mediaQuery960.matches && detailOpenChecker == "closed") {
-        detailsBackground.style.backgroundImage = 'url("../images/detailsimage960-1.jpeg")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/detailsimage960-1.jpeg")'
         detailOpenChecker = "open"
         detailsSecondSummary.style.fontSize = "inherit";
         detailsThirdSummary.style.fontSize = "inherit";
@@ -129,7 +129,7 @@ function changeDetailsBackground() {
         detailsFourthSummarySpan.style.padding = "0.3em .1em";
         detailsLastSummarySpan.style.padding = "0.3em .1em";
     } else {
-        detailsBackground.style.backgroundImage = 'url("../images/glhf-riot.png")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/glhf-riot.png")'
         detailOpenChecker = "closed"
         detailsSecondSummary.style.fontSize = "1.625rem";
         detailsThirdSummary.style.fontSize = "1.625rem";
@@ -155,7 +155,7 @@ function changeDetailsBackground() {
 
 function changeDetailsBackground2() {
     if (mediaQuery960.matches && detailOpenChecker == "closed") {
-        detailsBackground.style.backgroundImage = 'url("../images/detailsimage960-2.jpeg")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/detailsimage960-2.jpeg")'
         detailOpenChecker = "open"
         detailsFirstSummary.style.fontSize = "inherit";
         detailsThirdSummary.style.fontSize = "inherit";
@@ -177,7 +177,7 @@ function changeDetailsBackground2() {
         detailsFourthSummarySpan.style.padding = "0.3em .1em";
         detailsLastSummarySpan.style.padding = "0.3em .1em";
     } else {
-        detailsBackground.style.backgroundImage = 'url("../images/glhf-riot.png")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/glhf-riot.png")'
         detailOpenChecker = "closed"
         detailsFirstSummary.style.fontSize = "1.625rem";
         detailsThirdSummary.style.fontSize = "1.625rem";
@@ -203,7 +203,7 @@ function changeDetailsBackground2() {
 
 function changeDetailsBackground3() {
     if (mediaQuery960.matches && detailOpenChecker == "closed") {
-        detailsBackground.style.backgroundImage = 'url("../images/detailsimage960-3.jpeg")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/detailsimage960-3.jpeg")'
         detailOpenChecker = "open"
         detailsFirstSummary.style.fontSize = "inherit";
         detailsSecondSummary.style.fontSize = "inherit";
@@ -225,7 +225,7 @@ function changeDetailsBackground3() {
         detailsFourthSummarySpan.style.padding = "0.3em .1em";
         detailsLastSummarySpan.style.padding = "0.3em .1em";
     } else {
-        detailsBackground.style.backgroundImage = 'url("../images/glhf-riot.png")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/glhf-riot.png")'
         detailOpenChecker = "closed"
         detailsFirstSummary.style.fontSize = "1.625rem";
         detailsSecondSummary.style.fontSize = "1.625rem";
@@ -251,7 +251,7 @@ function changeDetailsBackground3() {
 
 function changeDetailsBackground4() {
     if (mediaQuery960.matches && detailOpenChecker == "closed") {
-        detailsBackground.style.backgroundImage = 'url("../images/detailsimage960-4.jpeg")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/detailsimage960-4.jpeg")'
         detailOpenChecker = "open"
         detailsFirstSummary.style.fontSize = "inherit";
         detailsSecondSummary.style.fontSize = "inherit";
@@ -273,7 +273,7 @@ function changeDetailsBackground4() {
         detailsThirdSummarySpan.style.padding = "0.3em .1em";
         detailsLastSummarySpan.style.padding = "0.3em .1em";
     } else {
-        detailsBackground.style.backgroundImage = 'url("../images/glhf-riot.png")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/glhf-riot.png")'
         detailOpenChecker = "closed"
         detailsFirstSummary.style.fontSize = "1.625rem";
         detailsSecondSummary.style.fontSize = "1.625rem";
@@ -299,7 +299,7 @@ function changeDetailsBackground4() {
 
 function changeDetailsBackground5() {
     if (mediaQuery960.matches && detailOpenChecker == "closed") {
-        detailsBackground.style.backgroundImage = 'url("../images/detailsimage960-5.jpeg")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/detailsimage960-5.jpeg")'
         detailOpenChecker = "open"
         detailsFirstSummary.style.fontSize = "inherit";
         detailsSecondSummary.style.fontSize = "inherit";
@@ -321,7 +321,7 @@ function changeDetailsBackground5() {
         detailsThirdSummarySpan.style.padding = "0.3em .1em";
         detailsFourthSummarySpan.style.padding = "0.3em .1em";
     } else {
-        detailsBackground.style.backgroundImage = 'url("../images/glhf-riot.png")'
+        detailsBackground.style.backgroundImage = 'url("../FED/images/glhf-riot.png")'
         detailOpenChecker = "closed"
         detailsFirstSummary.style.fontSize = "1.625rem";
         detailsSecondSummary.style.fontSize = "1.625rem";
