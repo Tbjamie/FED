@@ -254,7 +254,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ook heb ik geleerd da niet alle elementen een fixed width of height nodig hebben om ze te stijlen.
 
-  <img src="./readme-images/readme-images/ScreenshotHamburgermenu.png" width="375px" alt="top">
+  <img src="./readme-images/ScreenshotHamburgermenu.png" width="375px" alt="top">
   Dit is mijn hamburger menu
 
   <img src="./readme-images/ssresponsive1.png" width="375px" alt="top">
