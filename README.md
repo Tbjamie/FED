@@ -211,7 +211,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-    | Jamie Tirbeni                              | Tim                 | Sanne        |  Bente        |
+  | Jamie Tirbeni                              | Tim                 | Sanne        |  Bente        |
   | ---                                        | ---                 | ---          | ---              |
   | Ik heb een vraagje over een animatie       | Vraag over responsive |  Vraag over een img in de h1 | Een vraag over reponsive  |
   | ...     | Vraag over focus state                | ...             | Een vraag over de footer |
@@ -251,6 +251,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatjes
 
   Het responsive maken van de website ging erg goed en ook het maken van het hamburger menu ging goed.
+
+  Ook heb ik geleerd da niet alle elementen een fixed width of height nodig hebben om ze te stijlen.
 
   <img src="./readme-images/readme-images/ScreenshotHamburgermenu.png" width="375px" alt="top">
   Dit is mijn hamburger menu
