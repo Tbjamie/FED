@@ -440,4 +440,3 @@ navDetailsLast.addEventListener('mouseout', dropdownDisappear2);
 headerAboutRiot();
 detailsBackgroundPage();
 menu1025();
-
