@@ -3025,4 +3025,24 @@ main>div {
     #about-riot section:nth-of-type(2) p a {
         color: var(--semiwhitetext);
     }
+
+    #about-riot section:nth-of-type(3) {
+        filter: invert();
+    }
+
+    #about-riot section:nth-of-type(3) article {
+        filter: invert();
+    }
+
+    #about-riot section:nth-of-type(3) h3 {
+        filter: invert();
+    }
+
+    #about-riot section:nth-of-type(3) article p {
+        filter: invert();
+    }
+
+    #about-riot section:nth-of-type(3) article:last-of-type {
+        filter: invert();
+    }
 }
